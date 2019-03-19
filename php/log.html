@@ -86,8 +86,8 @@ float:top;
 <form action="book.html">
 <table>
 <p><center><h1>LOGIN</h1></center></p>
-<tr><td>Email</td><td><input type="email" name="ma" id="as" required><p class="p1" id="err1"></p><br>
-<tr><td>Password</td><td><input type="password" name="pa" id="pu" required><p class="p2" id="err2"></p> <br>
+<tr><td>Email</td><td><input type="email" name="ma" id="as" required><p class="p1" id="e1"></p><br>
+<tr><td>Password</td><td><input type="password" name="pa" id="pu" required><p class="p2" id="e2"></p> <br>
     <tr><td><input type="submit" id="bn" value="Login"><a href="sign.html">Signup</a></td></tr><br></td></tr></td></tr>
 </table></form>
 </aside>
@@ -104,18 +104,18 @@ float:top;
                 if(mail1.checkValidity)
               {
                   console.log("required");
-                  document.getElementById("err1").innerHTML=mail1.validationMessage;
+                  document.getElementById("e1").innerHTML=mail1.validationMessage;
               }
               else{
                   console.log("right");
-                  document.getElementById("err1").innerHTML=" ";   
+                  document.getElementById("e1").innerHTML=" ";   
               }
               if(pass1.checkValidity){
-                   document.getElementById("err2").innerHTML=pass1.validationMessage;
+                   document.getElementById("e2").innerHTML=pass1.validationMessage;
               }
               else{
             
-                  document.getElementById("err2").innerHTML=" ";   
+                  document.getElementById("e2").innerHTML=" ";   
               }
               
     </script>
