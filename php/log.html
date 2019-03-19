@@ -94,14 +94,14 @@ float:top;
 <script> 
       var btn=document.getElementById('bn');
           btn.onclick=function(e){
-              check_validation();
+              check_validation1();
           }
-          function check_validation(){
+          function check_validation1(){
               var mail1=document.getElementById('as');
               var pass1=document.getElementById('pu');
               
             //  document.getElementById("err3").innerHTML="";      
-                if(mail.checkValidity)
+                if(mail1.checkValidity)
               {
                   console.log("required");
                   document.getElementById("err1").innerHTML=mail1.validationMessage;
@@ -110,7 +110,7 @@ float:top;
                   console.log("right");
                   document.getElementById("err1").innerHTML=" ";   
               }
-              if(pass.checkValidity){
+              if(pass1.checkValidity){
                    document.getElementById("err2").innerHTML=pass1.validationMessage;
               }
               else{
